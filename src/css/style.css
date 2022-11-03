@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.container picture source {
+    width: 100vw;
+    height: 100%;
+}
+
+/*---Formulário---*/
+.form-container {
+    width: 400px;
+    padding: 15px;
+    margin: auto auto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.form input {
+    display: block;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-color: hsl(279, 6%, 55%);
+}
+
+.form .big-box input {
+    width: 380px;
+
+}
+
+.form .little-box input {
+    width: 80px;
+    text-align: center;
+}
+
+.form .btn {
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    background-color: hsl(278, 68%, 11%);
+}
+
+#card {
+    position: absolute;
+    color:  hsl(0, 0%, 100%);
+}
+
+#card div {
+    display: block;
+    width: 500px;
+    height: 250px;
+}
+
+.card-front {
+    margin-top: 30px;
+    margin-left: 30px;
+    background-image: url(../img/bg-card-front.png);
+    background-repeat: no-repeat;
+}
+
+.card-front .campo-de-numeros {
+    padding-top: 120px;
+    margin-left: 40px;
+    font-size: 32px;
+}
+
+.card-front .campo-do-nome {
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.card-front .campo-da-data {
+    margin-top: -250px;
+    margin-left: 370px;
+}
+
+.card-back {
+    margin-top: 30px;
+    margin-left: 100px;
+    background-image: url(../img/bg-card-back.png);
+    background-repeat: no-repeat;
+}
+
+.card-back .campo-do-cvc {
+    padding-top: 115px;
+    margin-left: 370px;
+}
+
+.logo-card {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*---Parte de errros---*/
+.form-control small {
+    display: none;
+}
+
+.form-control.erro input {
+    border-color: hsl(0, 100%, 66%);
+}
+
+.form-control.erro small {
+    display: flex;
+    font-size: 10px;
+    color: hsl(0, 100%, 66%);
+}
+
+.registered-data {
+   display: none;
+}
+
+.registered-data.sucesso {
+    display: block;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    padding: 15px;
+    margin-top: -480px;
+    margin-left: 580px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.registered-data svg, h2, p {
+    margin-top: 10px;
+}
+
+.registered-data h2 {
+    font-size: 28px;
+    color: hsl(278, 94%, 30%);
+}
+
+.registered-data p {
+    font-size: 20px;
+    color: hsl(279, 6%, 55%);
+}
+
+.form.sucesso {
+    display: none;
+}
+
+/*---Responsivo---*/
+@media(max-width: 768px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .form label {
+        text-align: right;
+    }
+
+    #card {
+        margin: 5px;
+    }
+
+    .card .card-back {
+        position: absolute;
+        margin-bottom: -10px;
+    }
+}

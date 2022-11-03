@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de detalhes do cartão interativo</title>
+
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <picture>
+            <source srcset="src/img/bg-main-desktop.png" height="625px" media="(min-width: 868px)">
+            <img src="src/img/bg-main-mobile.png" alt="Foto de fundo">
+        </picture>
+
+        <div id="card">
+            <svg class="logo-card" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+                <path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 
+            4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff" />
+            </svg>
+            <div class="card-front">
+                <div class="campo-de-numeros">
+                    <span>0000&nbsp;0000&nbsp;0000&nbsp;0000</span>
+                </div>
+                <div class="campo-do-nome">
+                    <span>Tobias&nbsp;Ramos</span>
+                </div>
+                <div class="campo-da-data">
+                    <span>00/</span>
+                    <span>00</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="campo-do-cvc">
+                    <span>000</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="form-container form" id="form">
+            <div class="big-box form-control">
+                <label for="name">NOME DO TITULAR</label>
+                <input type="text" name="name" id="name" placeholder="e.x. Tobias Ramos">
+                <small></small>
+            </div>
+
+            <div class="big-box form-control">
+                <label for="numero">NÚMERO DO CARTÃO</label>
+                <input type="text" name="numero" id="numero" placeholder="e.x. 123456789"  maxlength="16">
+                <small></small>
+            </div>
+
+            <div class="little-box form-control">
+                <label for="mes">(MM/DD)</label>
+                <input type="text" name="mes" id="mes" placeholder="MM">
+                <small></small>
+            </div>
+
+            <div class="little-box form-control">
+                <label for="ano">ANO</label>
+                <input type="text" name="ano" id="ano" placeholder="AA">
+                <small></small>
+            </div>
+
+            <div class="little-box form-control">
+                <label for="codigo">CVC</label>
+                <input type="text" name="codigo" id="codigo" placeholder="e.x.123">
+                <small></small>
+            </div>
+
+            <div class="big-box">
+                <input type="submit" class="btn" id="btn">
+            </div>
+        </form>
+    </div>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
