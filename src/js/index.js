@@ -1,3 +1,5 @@
+import IMask from 'imask';
+
 let form = document.getElementById('form')
 let nameTitular = document.getElementById('name')
 let numberCard = document.getElementById('numero')
