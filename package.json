@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "imask": "^6.4.3"
+    "cleave.js": "^1.6.0"
   }
 }

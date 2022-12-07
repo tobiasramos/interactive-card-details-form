@@ -48,19 +48,19 @@
 
         <form class="form-container form" id="form">
             <div class="big-box form-control">
-                <label for="name">NOME DO TITULAR</label>
-                <input type="text" name="name" id="name" placeholder="e.x. Tobias Ramos">
+                <label for="nomeTitular">NOME DO TITULAR</label>
+                <input type="text" name="nomeTitular" id="nomeTitular" placeholder="e.x. Tobias Ramos">
                 <small></small>
             </div>
 
             <div class="big-box form-control">
-                <label for="numero">NÚMERO DO CARTÃO</label>
-                <input type="text" name="numero" id="numero" placeholder="e.x. 123456789"  maxlength="16">
+                <label for="numCartao">NÚMERO DO CARTÃO</label>
+                <input type="text" name="numCartao" id="numCartao"  placeholder="e.x. 1111&nbsp;2222&nbsp;3333&nbsp;4444">
                 <small></small>
             </div>
 
             <div class="little-box form-control">
-                <label for="mes">(MM/DD)</label>
+                <label for="mes">(MM)</label>
                 <input type="text" name="mes" id="mes" placeholder="MM">
                 <small></small>
             </div>
@@ -82,7 +82,7 @@
             </div>
         </form>
     </div>
-    <script src="https://unpkg.com/imask"></script>
+    <script src="node_modules/cleave.js/dist/cleave.js"></script>
     <script src="src/js/index.js"></script>
 </body>
 
