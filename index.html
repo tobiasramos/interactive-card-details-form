@@ -22,13 +22,13 @@
         </picture>
 
         <div class="card" id="card">
-           <img class="logo-card" src="src/img/card-logo.svg" alt="Icone da logo do cartão">
             <div class="card-front">
+                <img class="logo-card" src="src/img/card-logo.svg" alt="Icone da logo do cartão">
                 <div class="campo-de-numeros">
-                    <span>0000&nbsp;0000&nbsp;0000&nbsp;0000</span>
+                    <span id="campo-de-numeros">0000&nbsp;0000&nbsp;0000&nbsp;0000</span>
                 </div>
                 <div class="campo-do-nome">
-                    <span>Tobias&nbsp;Ramos</span>
+                    <span id="campo-do-nome">Tobias&nbsp;Ramos</span>
                 </div>
                 <div class="campo-da-data">
                     <span>00/</span>
@@ -79,6 +79,7 @@
         </form>
     </div>
     <script src="node_modules/cleave.js/dist/cleave.js"></script>
+    <script src="src/js/validacoes-form.js"></script>
     <script src="src/js/index.js"></script>
 </body>
 

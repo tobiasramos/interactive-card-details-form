@@ -6,13 +6,79 @@ body {
 
 .container {
     display: flex;
-    position: relative;
 }
 
 .container picture source {
     width: 100vw;
     height: 100%;
+
 }
+
+/*---Cartão---*/
+.card {
+    width: 600px;
+    height: 590px;
+    margin-top: 10px;
+    margin-left: -300px;
+    color: hsl(0, 0%, 100%);
+}
+
+.card-front .logo-card {
+    margin-top: 20px;
+}
+
+.card-front .logo-card,
+.campo-de-numeros,
+.campo-do-nome {
+    margin-left: 30px;
+    position: absolute;
+}
+
+.card div {
+    width: 500px;
+    height: 250px;
+}
+
+.card-front {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-image: url(../img/bg-card-front.png);
+    background-repeat: no-repeat;
+
+    border: 1px solid green;
+}
+
+.card-front .campo-de-numeros {
+    padding-top: 120px;
+    font-size: 30px;
+}
+
+.card-front .campo-do-nome {
+    margin-top: 190px;
+}
+
+.card-front .campo-da-data {
+    margin-top: 190px;
+    margin-left: 370px;
+}
+
+.card-back {
+    margin-top: 30px;
+    margin-left: 100px;
+    background-image: url(../img/bg-card-back.png);
+    background-repeat: no-repeat;
+
+    border: 1px solid yellow;
+}
+
+.card-back .campo-do-cvc {
+    padding-top: 115px;
+    margin-left: 370px;
+}
+
+
+
 
 /*---Formulário---*/
 .form-container {
@@ -55,62 +121,6 @@ body {
     background-color: hsl(278, 68%, 11%);
 }
 
-.card {
-    position: absolute;
-    color:  hsl(0, 0%, 100%);
-}
-
-.card div {
-    display: block;
-    width: 500px;
-    height: 250px;
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-}
-
-.card-front {
-    margin-top: 30px;
-    margin-left: 30px;
-    background-image: url(../img/bg-card-front.png);
-    background-repeat: no-repeat;
-}
-
-.card-front .campo-de-numeros {
-    padding-top: 120px;
-    margin-left: 40px;
-    font-size: 32px;
-}
-
-.card-front .campo-do-nome {
-    margin-top: -60px;
-    margin-left: 50px;
-}
-
-.card-front .campo-da-data {
-    margin-top: -250px;
-    margin-left: 370px;
-}
-
-.card-back {
-    margin-top: 320px;
-    margin-left: 100px;
-    background-image: url(../img/bg-card-back.png);
-    background-repeat: no-repeat;
-}
-
-.card-back .campo-do-cvc {
-    padding-top: 115px;
-    margin-left: 370px;
-}
-
-.logo-card {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 50px;
-}
 
 /*---Parte de errros---*/
 .form-control small {
@@ -128,7 +138,7 @@ body {
 }
 
 .registered-data {
-   display: none;
+    display: none;
 }
 
 .registered-data.sucesso {
@@ -161,10 +171,6 @@ body {
     display: none;
 }
 
-/*--- Adicionando bordas para melhor entender e deixar o projeto responsivo ---*/
-#card{
-    border: 1px solid red;
-}
 
 /*---Responsivo---*/
 @media(max-width: 968px) {
@@ -172,18 +178,14 @@ body {
         display: block;
         text-align: center;
     }
-    
+
     .card {
         margin-top: -270px;
     }
 
-    .card .card-front {
-        
-    }
+    .card .card-front {}
 
-    .card .card-back {
-       
-    }
+    .card .card-back {}
 
     .form {
         margin-top: 300px;
