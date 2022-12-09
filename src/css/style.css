@@ -18,9 +18,17 @@ body {
 .card {
     width: 600px;
     height: 590px;
+    position: relative;
     margin-top: 10px;
     margin-left: -300px;
     color: hsl(0, 0%, 100%);
+}
+
+.card .card-front,
+.card .card-back {
+    width: 450px;
+    height: 250px;
+    position: absolute;
 }
 
 .card-front .logo-card {
@@ -34,19 +42,12 @@ body {
     position: absolute;
 }
 
-.card div {
-    width: 500px;
-    height: 250px;
-}
-
 .card-front {
-    position: relative;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 30px;
     background-image: url(../img/bg-card-front.png);
     background-repeat: no-repeat;
 
-    border: 1px solid green;
 }
 
 .card-front .campo-de-numeros {
@@ -64,20 +65,16 @@ body {
 }
 
 .card-back {
-    margin-top: 30px;
+    margin-top: 310px;
     margin-left: 100px;
     background-image: url(../img/bg-card-back.png);
     background-repeat: no-repeat;
-
-    border: 1px solid yellow;
 }
 
 .card-back .campo-do-cvc {
     padding-top: 115px;
     margin-left: 370px;
 }
-
-
 
 
 /*---Formulário---*/
@@ -172,22 +169,3 @@ body {
 }
 
 
-/*---Responsivo---*/
-@media(max-width: 968px) {
-    .container {
-        display: block;
-        text-align: center;
-    }
-
-    .card {
-        margin-top: -270px;
-    }
-
-    .card .card-front {}
-
-    .card .card-back {}
-
-    .form {
-        margin-top: 300px;
-    }
-}
