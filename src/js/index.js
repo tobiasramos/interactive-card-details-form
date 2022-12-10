@@ -64,6 +64,7 @@ function novaPage() {
 
     resultado.innerHTML = `
                            <div class="card-front">
+                                <img class="logo-card" src="src/img/card-logo.svg" alt="Icone da logo do cartão">
                                 <div class="campo-de-numeros">
                                     <span>${numeroCartao.value}</span>
                                 </div>
@@ -75,17 +76,19 @@ function novaPage() {
                                     <span>${ano.value}</span>
                                 </div>
                             </div>
+
                             <div class="card-back">
-                            <div class="campo-do-cvc">
+                                <div class="campo-do-cvc">
                                     <span>${codigo.value}</span>
                                 </div>
                             </div>
+
                             <div class="registered-data sucesso">
-                            <div>
-                            <img src="src/img/icon-complete.svg" alt="Icone de cartão cadastrado">  
-                            <h2>Obrigado</h2>
-                            <p>Adicionamos os detalhes do seu cartão</p>
-                        </div></div>
+                                    <img src="src/img/icon-complete.svg" alt="Icone de cartão cadastrado">  
+                                    <h2>Obrigado</h2>
+                                    <p>Adicionamos os detalhes do seu cartão</p>
+                                
+                            </div>
                             `
 }
 
